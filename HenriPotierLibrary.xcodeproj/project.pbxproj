@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F9C97B371EA6C45A00FA475E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B361EA6C45A00FA475E /* AppDelegate.swift */; };
-		F9C97B391EA6C45A00FA475E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B381EA6C45A00FA475E /* ViewController.swift */; };
-		F9C97B3C1EA6C45A00FA475E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B3A1EA6C45A00FA475E /* Main.storyboard */; };
-		F9C97B3E1EA6C45A00FA475E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B3D1EA6C45A00FA475E /* Assets.xcassets */; };
-		F9C97B411EA6C45A00FA475E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B3F1EA6C45A00FA475E /* LaunchScreen.storyboard */; };
+		4BA848C2A2CD9E380594BC6A /* Pods_HenriPotierLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B135221A31F17644A094C0 /* Pods_HenriPotierLibrary.framework */; };
+		A55F01BFA0DDE6E1ADA23EBD /* Pods_HenriPotierLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475154914F8CC617E786ECA9 /* Pods_HenriPotierLibraryTests.framework */; };
 		F9C97B4C1EA6C45B00FA475E /* HenriPotierLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */; };
+		F9C97B7F1EA6CA0D00FA475E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B771EA6CA0D00FA475E /* AppDelegate.swift */; };
+		F9C97B801EA6CA0D00FA475E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B781EA6CA0D00FA475E /* Assets.xcassets */; };
+		F9C97B811EA6CA0D00FA475E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B791EA6CA0D00FA475E /* LaunchScreen.storyboard */; };
+		F9C97B821EA6CA0D00FA475E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B7B1EA6CA0D00FA475E /* Main.storyboard */; };
+		F9C97B831EA6CA0D00FA475E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B7D1EA6CA0D00FA475E /* Info.plist */; };
+		F9C97B841EA6CA0D00FA475E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DCF5FDADAE51D6E72B041CC /* Pods-HenriPotierLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibrary/Pods-HenriPotierLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		18B135221A31F17644A094C0 /* Pods_HenriPotierLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriPotierLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19881B2D93B2044AD7EA6141 /* Pods-HenriPotierLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibrary/Pods-HenriPotierLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		475154914F8CC617E786ECA9 /* Pods_HenriPotierLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriPotierLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDB94F8D4254A1E22EE4FFA /* Pods-HenriPotierLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE87491EF35F8DFA5E792E08 /* Pods-HenriPotierLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9C97B331EA6C45A00FA475E /* HenriPotierLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9C97B361EA6C45A00FA475E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9C97B381EA6C45A00FA475E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9C97B3B1EA6C45A00FA475E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F9C97B3D1EA6C45A00FA475E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F9C97B401EA6C45A00FA475E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F9C97B421EA6C45A00FA475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C97B471EA6C45B00FA475E /* HenriPotierLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenriPotierLibraryTests.swift; sourceTree = "<group>"; };
 		F9C97B4D1EA6C45B00FA475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C97B771EA6CA0D00FA475E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9C97B781EA6CA0D00FA475E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9C97B7A1EA6CA0D00FA475E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9C97B7C1EA6CA0D00FA475E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9C97B7D1EA6CA0D00FA475E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA848C2A2CD9E380594BC6A /* Pods_HenriPotierLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +60,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55F01BFA0DDE6E1ADA23EBD /* Pods_HenriPotierLibraryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AF85AA7677674591DD9A678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18B135221A31F17644A094C0 /* Pods_HenriPotierLibrary.framework */,
+				475154914F8CC617E786ECA9 /* Pods_HenriPotierLibraryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A809FEC9A3276630FCBD2AA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19881B2D93B2044AD7EA6141 /* Pods-HenriPotierLibrary.debug.xcconfig */,
+				0DCF5FDADAE51D6E72B041CC /* Pods-HenriPotierLibrary.release.xcconfig */,
+				8CDB94F8D4254A1E22EE4FFA /* Pods-HenriPotierLibraryTests.debug.xcconfig */,
+				AE87491EF35F8DFA5E792E08 /* Pods-HenriPotierLibraryTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F9C97B2A1EA6C45A00FA475E = {
 			isa = PBXGroup;
 			children = (
 				F9C97B351EA6C45A00FA475E /* HenriPotierLibrary */,
 				F9C97B4A1EA6C45B00FA475E /* HenriPotierLibraryTests */,
 				F9C97B341EA6C45A00FA475E /* Products */,
+				A809FEC9A3276630FCBD2AA6 /* Pods */,
+				4AF85AA7677674591DD9A678 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +110,10 @@
 		F9C97B351EA6C45A00FA475E /* HenriPotierLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				F9C97B361EA6C45A00FA475E /* AppDelegate.swift */,
-				F9C97B381EA6C45A00FA475E /* ViewController.swift */,
-				F9C97B3A1EA6C45A00FA475E /* Main.storyboard */,
-				F9C97B3D1EA6C45A00FA475E /* Assets.xcassets */,
-				F9C97B3F1EA6C45A00FA475E /* LaunchScreen.storyboard */,
-				F9C97B421EA6C45A00FA475E /* Info.plist */,
+				F9C97B761EA6CA0D00FA475E /* Application */,
+				F9C97B5A1EA6C80900FA475E /* Helpers */,
+				F9C97B5B1EA6C80900FA475E /* Models */,
+				F9C97B5C1EA6C80900FA475E /* Networking */,
 			);
 			path = HenriPotierLibrary;
 			sourceTree = "<group>";
@@ -96,6 +127,40 @@
 			path = HenriPotierLibraryTests;
 			sourceTree = "<group>";
 		};
+		F9C97B5A1EA6C80900FA475E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F9C97B5B1EA6C80900FA475E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9C97B5C1EA6C80900FA475E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F9C97B761EA6CA0D00FA475E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F9C97B771EA6CA0D00FA475E /* AppDelegate.swift */,
+				F9C97B781EA6CA0D00FA475E /* Assets.xcassets */,
+				F9C97B791EA6CA0D00FA475E /* LaunchScreen.storyboard */,
+				F9C97B7B1EA6CA0D00FA475E /* Main.storyboard */,
+				F9C97B7D1EA6CA0D00FA475E /* Info.plist */,
+				F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C97B501EA6C45B00FA475E /* Build configuration list for PBXNativeTarget "HenriPotierLibrary" */;
 			buildPhases = (
+				E8198357B328442AE15DF589 /* [CP] Check Pods Manifest.lock */,
 				F9C97B2F1EA6C45A00FA475E /* Sources */,
 				F9C97B301EA6C45A00FA475E /* Frameworks */,
 				F9C97B311EA6C45A00FA475E /* Resources */,
+				D12F251BA6D4EBB7FEDC8C71 /* [CP] Embed Pods Frameworks */,
+				E5803594D569776C33F105E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C97B531EA6C45B00FA475E /* Build configuration list for PBXNativeTarget "HenriPotierLibraryTests" */;
 			buildPhases = (
+				AE21A5B47F5EE80BA839AEBA /* [CP] Check Pods Manifest.lock */,
 				F9C97B431EA6C45B00FA475E /* Sources */,
 				F9C97B441EA6C45B00FA475E /* Frameworks */,
 				F9C97B451EA6C45B00FA475E /* Resources */,
+				8B9B75AADA12E48D3F6E6905 /* [CP] Embed Pods Frameworks */,
+				2B4CFA4C7289A5CA81F1BC88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C97B411EA6C45A00FA475E /* LaunchScreen.storyboard in Resources */,
-				F9C97B3E1EA6C45A00FA475E /* Assets.xcassets in Resources */,
-				F9C97B3C1EA6C45A00FA475E /* Main.storyboard in Resources */,
+				F9C97B831EA6CA0D00FA475E /* Info.plist in Resources */,
+				F9C97B821EA6CA0D00FA475E /* Main.storyboard in Resources */,
+				F9C97B801EA6CA0D00FA475E /* Assets.xcassets in Resources */,
+				F9C97B811EA6CA0D00FA475E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,13 +268,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B4CFA4C7289A5CA81F1BC88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9B75AADA12E48D3F6E6905 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE21A5B47F5EE80BA839AEBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D12F251BA6D4EBB7FEDC8C71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierLibrary/Pods-HenriPotierLibrary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5803594D569776C33F105E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierLibrary/Pods-HenriPotierLibrary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8198357B328442AE15DF589 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9C97B2F1EA6C45A00FA475E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C97B391EA6C45A00FA475E /* ViewController.swift in Sources */,
-				F9C97B371EA6C45A00FA475E /* AppDelegate.swift in Sources */,
+				F9C97B841EA6CA0D00FA475E /* ViewController.swift in Sources */,
+				F9C97B7F1EA6CA0D00FA475E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,20 +390,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F9C97B3A1EA6C45A00FA475E /* Main.storyboard */ = {
+		F9C97B791EA6CA0D00FA475E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F9C97B3B1EA6C45A00FA475E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F9C97B3F1EA6C45A00FA475E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9C97B401EA6C45A00FA475E /* Base */,
+				F9C97B7A1EA6CA0D00FA475E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F9C97B7B1EA6CA0D00FA475E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9C97B7C1EA6CA0D00FA475E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -339,10 +504,11 @@
 		};
 		F9C97B511EA6C45B00FA475E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19881B2D93B2044AD7EA6141 /* Pods-HenriPotierLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
-				INFOPLIST_FILE = HenriPotierLibrary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HenriPotierLibrary/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,10 +518,11 @@
 		};
 		F9C97B521EA6C45B00FA475E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCF5FDADAE51D6E72B041CC /* Pods-HenriPotierLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
-				INFOPLIST_FILE = HenriPotierLibrary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HenriPotierLibrary/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -365,6 +532,7 @@
 		};
 		F9C97B541EA6C45B00FA475E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CDB94F8D4254A1E22EE4FFA /* Pods-HenriPotierLibraryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +548,7 @@
 		};
 		F9C97B551EA6C45B00FA475E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE87491EF35F8DFA5E792E08 /* Pods-HenriPotierLibraryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
