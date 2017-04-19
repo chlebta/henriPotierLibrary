@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		4BA848C2A2CD9E380594BC6A /* Pods_HenriPotierLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B135221A31F17644A094C0 /* Pods_HenriPotierLibrary.framework */; };
 		A55F01BFA0DDE6E1ADA23EBD /* Pods_HenriPotierLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475154914F8CC617E786ECA9 /* Pods_HenriPotierLibraryTests.framework */; };
+		F99D71131EA7FCE500351A9A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71121EA7FCE500351A9A /* RequestManager.swift */; };
+		F99D711C1EA7FD7600351A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71151EA7FD7500351A9A /* AppDelegate.swift */; };
+		F99D711D1EA7FD7600351A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99D71161EA7FD7500351A9A /* Assets.xcassets */; };
+		F99D711E1EA7FD7600351A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99D71171EA7FD7500351A9A /* LaunchScreen.storyboard */; };
+		F99D711F1EA7FD7600351A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99D71191EA7FD7500351A9A /* Main.storyboard */; };
+		F99D71201EA7FD7600351A9A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F99D711B1EA7FD7600351A9A /* Info.plist */; };
+		F99D71221EA7FE0500351A9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F99D71211EA7FE0500351A9A /* Localizable.strings */; };
+		F99D71241EA80B2D00351A9A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71231EA80B2D00351A9A /* Log.swift */; };
+		F99D71281EA80E4700351A9A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71271EA80E4700351A9A /* ApiManager.swift */; };
 		F9C97B4C1EA6C45B00FA475E /* HenriPotierLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */; };
-		F9C97B7F1EA6CA0D00FA475E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B771EA6CA0D00FA475E /* AppDelegate.swift */; };
-		F9C97B801EA6CA0D00FA475E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B781EA6CA0D00FA475E /* Assets.xcassets */; };
-		F9C97B811EA6CA0D00FA475E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B791EA6CA0D00FA475E /* LaunchScreen.storyboard */; };
-		F9C97B821EA6CA0D00FA475E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B7B1EA6CA0D00FA475E /* Main.storyboard */; };
-		F9C97B831EA6CA0D00FA475E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9C97B7D1EA6CA0D00FA475E /* Info.plist */; };
 		F9C97B841EA6CA0D00FA475E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,15 +39,19 @@
 		475154914F8CC617E786ECA9 /* Pods_HenriPotierLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriPotierLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDB94F8D4254A1E22EE4FFA /* Pods-HenriPotierLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE87491EF35F8DFA5E792E08 /* Pods-HenriPotierLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
+		F99D71121EA7FCE500351A9A /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		F99D71151EA7FD7500351A9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F99D71161EA7FD7500351A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F99D71181EA7FD7500351A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F99D711A1EA7FD7600351A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F99D711B1EA7FD7600351A9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99D71211EA7FE0500351A9A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F99D71231EA80B2D00351A9A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		F99D71271EA80E4700351A9A /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		F9C97B331EA6C45A00FA475E /* HenriPotierLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B471EA6C45B00FA475E /* HenriPotierLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenriPotierLibraryTests.swift; sourceTree = "<group>"; };
 		F9C97B4D1EA6C45B00FA475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9C97B771EA6CA0D00FA475E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9C97B781EA6CA0D00FA475E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F9C97B7A1EA6CA0D00FA475E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F9C97B7C1EA6CA0D00FA475E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F9C97B7D1EA6CA0D00FA475E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,19 @@
 				AE87491EF35F8DFA5E792E08 /* Pods-HenriPotierLibraryTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F99D71141EA7FD7500351A9A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F99D71151EA7FD7500351A9A /* AppDelegate.swift */,
+				F99D71161EA7FD7500351A9A /* Assets.xcassets */,
+				F99D71171EA7FD7500351A9A /* LaunchScreen.storyboard */,
+				F99D71191EA7FD7500351A9A /* Main.storyboard */,
+				F99D711B1EA7FD7600351A9A /* Info.plist */,
+				F99D71211EA7FE0500351A9A /* Localizable.strings */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F9C97B2A1EA6C45A00FA475E = {
@@ -130,6 +151,7 @@
 		F9C97B5A1EA6C80900FA475E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F99D71231EA80B2D00351A9A /* Log.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -144,6 +166,8 @@
 		F9C97B5C1EA6C80900FA475E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F99D71121EA7FCE500351A9A /* RequestManager.swift */,
+				F99D71271EA80E4700351A9A /* ApiManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -151,11 +175,7 @@
 		F9C97B761EA6CA0D00FA475E /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				F9C97B771EA6CA0D00FA475E /* AppDelegate.swift */,
-				F9C97B781EA6CA0D00FA475E /* Assets.xcassets */,
-				F9C97B791EA6CA0D00FA475E /* LaunchScreen.storyboard */,
-				F9C97B7B1EA6CA0D00FA475E /* Main.storyboard */,
-				F9C97B7D1EA6CA0D00FA475E /* Info.plist */,
+				F99D71141EA7FD7500351A9A /* Common */,
 				F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */,
 			);
 			path = Application;
@@ -252,10 +272,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C97B831EA6CA0D00FA475E /* Info.plist in Resources */,
-				F9C97B821EA6CA0D00FA475E /* Main.storyboard in Resources */,
-				F9C97B801EA6CA0D00FA475E /* Assets.xcassets in Resources */,
-				F9C97B811EA6CA0D00FA475E /* LaunchScreen.storyboard in Resources */,
+				F99D71221EA7FE0500351A9A /* Localizable.strings in Resources */,
+				F99D71201EA7FD7600351A9A /* Info.plist in Resources */,
+				F99D711F1EA7FD7600351A9A /* Main.storyboard in Resources */,
+				F99D711E1EA7FD7600351A9A /* LaunchScreen.storyboard in Resources */,
+				F99D711D1EA7FD7600351A9A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +387,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99D711C1EA7FD7600351A9A /* AppDelegate.swift in Sources */,
+				F99D71131EA7FCE500351A9A /* RequestManager.swift in Sources */,
+				F99D71281EA80E4700351A9A /* ApiManager.swift in Sources */,
+				F99D71241EA80B2D00351A9A /* Log.swift in Sources */,
 				F9C97B841EA6CA0D00FA475E /* ViewController.swift in Sources */,
-				F9C97B7F1EA6CA0D00FA475E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,18 +414,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F9C97B791EA6CA0D00FA475E /* LaunchScreen.storyboard */ = {
+		F99D71171EA7FD7500351A9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F9C97B7A1EA6CA0D00FA475E /* Base */,
+				F99D71181EA7FD7500351A9A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F9C97B7B1EA6CA0D00FA475E /* Main.storyboard */ = {
+		F99D71191EA7FD7500351A9A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F9C97B7C1EA6CA0D00FA475E /* Base */,
+				F99D711A1EA7FD7600351A9A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -508,7 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
-				INFOPLIST_FILE = "$(SRCROOT)/HenriPotierLibrary/Application/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HenriPotierLibrary/Application/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
-				INFOPLIST_FILE = "$(SRCROOT)/HenriPotierLibrary/Application/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HenriPotierLibrary/Application/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,6 +605,7 @@
 				F9C97B521EA6C45B00FA475E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9C97B531EA6C45B00FA475E /* Build configuration list for PBXNativeTarget "HenriPotierLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +614,7 @@
 				F9C97B551EA6C45B00FA475E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

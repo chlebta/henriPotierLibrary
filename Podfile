@@ -7,6 +7,7 @@ target 'HenriPotierLibrary' do
 
   # Pods for HenriPotierLibrary
   pod 'Alamofire', '~> 4.4'
+  pod 'Log'
 
   
   target 'HenriPotierLibraryTests' do
