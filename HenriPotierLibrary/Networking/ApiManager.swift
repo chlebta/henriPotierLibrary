@@ -26,7 +26,7 @@ class ApiManager {
 }
 
 // MARK: Books request
-typealias BooksResult = (_ books: [Any]?, _ error: Error?) -> Void
+typealias BooksResult = (_ books: [Book]?, _ error: Error?) -> Void
 
 extension ApiManager {
     
@@ -35,10 +35,13 @@ extension ApiManager {
             
             //For books the expected result is json array
             if let array = response as? [NSDictionary] {
-                //Parse array to books array
-                withCompletion?(array, nil)
                 
-                Log.debug("result : %@", array)
+                //Parse the received result to books array
+                let books:[Book] = array.flatMap({ item -> Book? in
+                    return Book(item)
+                })
+                
+                withCompletion?(books, nil)
             }
             else {
                 withCompletion?(nil, ApiError.invalideResponse)
