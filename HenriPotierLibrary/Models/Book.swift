@@ -22,7 +22,20 @@ struct Book {
 }
 
 extension Book {
+    
     init?(_ dictionary: NSDictionary) {
-        return nil
+        
+        guard let isbn = dictionary["isbn"] as? String,
+            let title = dictionary["title"] as? String,
+            let price = dictionary["price"] as? NSNumber else {
+                return nil
+        }
+        
+        self.isbn = isbn
+        self.title = title
+        self.price = price.floatValue
+
+        self.coverUrl = dictionary["cover"] as? String
+        self.synopsis = dictionary["synopsis"] as? [String]
     }
 }

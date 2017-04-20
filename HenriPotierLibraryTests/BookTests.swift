@@ -29,7 +29,7 @@ class BookTests: XCTestCase {
             [
                 "isbn": "c8fabf68-8374-48fe-a7ea-a00ccd07afff",
                 "title": "Henri Potier à l'école des sorciers",
-                "price": 35,
+                "price": 35.0,
                 "cover": "http://henri-potier.xebia.fr/hp0.jpg",
                 "synopsis": ["synopsis-1", "synopsis-2"]
         ]
@@ -40,7 +40,7 @@ class BookTests: XCTestCase {
         
         XCTAssertEqual(book?.isbn, "c8fabf68-8374-48fe-a7ea-a00ccd07afff")
         XCTAssertEqual(book?.title, "Henri Potier à l'école des sorciers")
-        XCTAssertEqual(book?.price, 35.0)
+        XCTAssertEqual(book?.price, 35)
         
         XCTAssertEqual(book?.coverUrl, "http://henri-potier.xebia.fr/hp0.jpg")
         
@@ -68,7 +68,6 @@ class BookTests: XCTestCase {
         XCTAssertEqual(book?.price, 35.0)
         
         XCTAssertNil(book?.coverUrl)
-        
     }
     
     
