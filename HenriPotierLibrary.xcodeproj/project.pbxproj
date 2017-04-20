@@ -18,7 +18,8 @@
 		F99D71221EA7FE0500351A9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F99D71211EA7FE0500351A9A /* Localizable.strings */; };
 		F99D71241EA80B2D00351A9A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71231EA80B2D00351A9A /* Log.swift */; };
 		F99D71281EA80E4700351A9A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71271EA80E4700351A9A /* ApiManager.swift */; };
-		F9C97B4C1EA6C45B00FA475E /* HenriPotierLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */; };
+		F99D71321EA9053200351A9A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71311EA9053200351A9A /* Book.swift */; };
+		F99D71451EA90D3400351A9A /* BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D71441EA90D3400351A9A /* BookTests.swift */; };
 		F9C97B841EA6CA0D00FA475E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +49,11 @@
 		F99D71211EA7FE0500351A9A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F99D71231EA80B2D00351A9A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		F99D71271EA80E4700351A9A /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F99D71311EA9053200351A9A /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F99D71431EA90D3400351A9A /* HenriPotierLibraryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HenriPotierLibraryTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F99D71441EA90D3400351A9A /* BookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
 		F9C97B331EA6C45A00FA475E /* HenriPotierLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B471EA6C45B00FA475E /* HenriPotierLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenriPotierLibraryTests.swift; sourceTree = "<group>"; };
 		F9C97B4D1EA6C45B00FA475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C97B7E1EA6CA0D00FA475E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,8 +145,9 @@
 		F9C97B4A1EA6C45B00FA475E /* HenriPotierLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
-				F9C97B4B1EA6C45B00FA475E /* HenriPotierLibraryTests.swift */,
 				F9C97B4D1EA6C45B00FA475E /* Info.plist */,
+				F99D71441EA90D3400351A9A /* BookTests.swift */,
+				F99D71431EA90D3400351A9A /* HenriPotierLibraryTests-Bridging-Header.h */,
 			);
 			path = HenriPotierLibraryTests;
 			sourceTree = "<group>";
@@ -159,6 +163,7 @@
 		F9C97B5B1EA6C80900FA475E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F99D71311EA9053200351A9A /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 					F9C97B461EA6C45B00FA475E = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = X4S5YE2LML;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F9C97B321EA6C45A00FA475E;
 					};
@@ -389,6 +395,7 @@
 			files = (
 				F99D711C1EA7FD7600351A9A /* AppDelegate.swift in Sources */,
 				F99D71131EA7FCE500351A9A /* RequestManager.swift in Sources */,
+				F99D71321EA9053200351A9A /* Book.swift in Sources */,
 				F99D71281EA80E4700351A9A /* ApiManager.swift in Sources */,
 				F99D71241EA80B2D00351A9A /* Log.swift in Sources */,
 				F9C97B841EA6CA0D00FA475E /* ViewController.swift in Sources */,
@@ -399,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C97B4C1EA6C45B00FA475E /* HenriPotierLibraryTests.swift in Sources */,
+				F99D71451EA90D3400351A9A /* BookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,11 +567,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
 				INFOPLIST_FILE = HenriPotierLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HenriPotierLibraryTests/HenriPotierLibraryTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotierLibrary.app/HenriPotierLibrary";
 			};
@@ -576,11 +586,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
 				INFOPLIST_FILE = HenriPotierLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HenriPotierLibraryTests/HenriPotierLibraryTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotierLibrary.app/HenriPotierLibrary";
 			};
