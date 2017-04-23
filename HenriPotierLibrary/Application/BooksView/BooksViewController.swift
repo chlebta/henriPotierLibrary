@@ -26,13 +26,15 @@ class BooksViewController: UIViewController {
 }
 
 //MARK:
-//MARK: 
+//MARK: Configure views
 extension BooksViewController {
     
     //Her goes any views costumization
     fileprivate func setupViews() {
         
         self.title = "Books list"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"bag"), style: .plain, target: self, action: #selector(self.openShoppingView(_ :)))
             
         //Tableview customization
         self.tableView.contentInset = UIEdgeInsetsMake(-30, 0, 0, 0);
@@ -59,6 +61,15 @@ extension BooksViewController {
     }
     
 }
+
+//MARK: 
+//MARK: Actions 
+extension BooksViewController {
+    @objc fileprivate func openShoppingView( _ sender: Any) {
+    
+    }
+}
+
 //MARK:
 //MARK: tableview
 extension BooksViewController: UITabBarDelegate, UITableViewDataSource {
@@ -76,7 +87,18 @@ extension BooksViewController: UITabBarDelegate, UITableViewDataSource {
     let cell:BookTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as! BookTableViewCell
     
         cell.book = books[indexPath.section]
+        cell.index = indexPath.section
+        cell.delegate = self
         return cell
+    }
+    
+}
+
+//MARK:
+//MARK: BookCellDelegate
+extension BooksViewController: BookTableViewCellDelegate {
+    func didTapAddButton(_ index: Int) {
+        self.navigationItem.rightBarButtonItem?.badgeValue = "\(CartManager.shared.cartItems.count)"
     }
     
 }

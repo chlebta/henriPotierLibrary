@@ -1,5 +1,5 @@
 //
-//  ImageViewExtension.swift
+//  UIImageViewExtension.swift
 //  HenriPotierLibrary
 //
 //  Created by Ahmed K on 23/04/2017.

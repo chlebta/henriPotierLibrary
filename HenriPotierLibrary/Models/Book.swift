@@ -8,19 +8,18 @@
 
 import Foundation
 
-
 //Book structure
 struct Book {
-    
     var isbn: String
     var title: String
     var price: Float
     
     var coverUrl: String?
     var synopsis: [String]?
-    
 }
 
+//MARK:
+//MARK: Init
 extension Book {
     
     init?(_ dictionary: NSDictionary) {
@@ -38,4 +37,12 @@ extension Book {
         self.coverUrl = dictionary["cover"] as? String
         self.synopsis = dictionary["synopsis"] as? [String]
     }
+}
+
+//MARK:
+//MARK:
+extension Book: Equatable {}
+
+func ==(lhs: Book, rhs: Book) -> Bool {
+    return lhs.isbn == rhs.isbn
 }

@@ -8,20 +8,25 @@
 
 import UIKit
 
+protocol BookTableViewCellDelegate {
+    func didTapAddButton( _ index: Int)
+}
+
 class BookTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var coverImageView: UIImageView!
-    
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    var delegate: BookTableViewCellDelegate?
+    var index: Int!
     
     var book: Book! {
         didSet {
             self.reloadView()
         }
     }
-    
     
     fileprivate func reloadView() {
         self.priceLabel.text = book.price.asCurrency
@@ -31,4 +36,13 @@ class BookTableViewCell: UITableViewCell {
             self.coverImageView.imageFromUrl(url, UIImage(named: "cover"))
         }
     }
+    
+    
+    @IBAction func addButtonAction(_ sender: Any) {
+        CartManager.shared.addItem(book)
+        self.delegate?.didTapAddButton(index)
+        
+    }
+    
+    
 }
