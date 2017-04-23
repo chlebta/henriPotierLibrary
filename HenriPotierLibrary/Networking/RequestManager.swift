@@ -19,9 +19,9 @@ enum RequestError: Error {
     var description : String {
         switch self {
         case .unknown:
-            return NSLocalizedString("unknowError", comment: "Message to inform user that an unkonw error was occured")
+            return "Unknow error"
         case .noInternet:
-            return NSLocalizedString("noInternet", comment: "Message to informe user that there's no internet connection")
+            return "No internet connection"
         }
     }
 }
@@ -54,7 +54,7 @@ extension RequestManager {
                     result?(response.result.value, nil)
                     
                 case .failure(let error):
-                    Log.error(error)
+                    print("Error : \(error)")
                     
                     if let error = error as? URLError,
                         error.code  == URLError.Code.notConnectedToInternet {
