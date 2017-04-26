@@ -20,6 +20,7 @@
 		F99D716B1EA95FEB00351A9A /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D716A1EA95FEB00351A9A /* BookTableViewCell.swift */; };
 		F9C1B0AF1EB1408E00E52FD4 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1B0AE1EB1408E00E52FD4 /* Offer.swift */; };
 		F9C1B0B11EB1433700E52FD4 /* OfferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1B0B01EB1433700E52FD4 /* OfferTests.swift */; };
+		F9C1B0B31EB14C0400E52FD4 /* OfferApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1B0B21EB14C0400E52FD4 /* OfferApiManager.swift */; };
 		F9F080CD1EAC1F3F008CB9F7 /* UImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080CC1EAC1F3F008CB9F7 /* UImageViewExtension.swift */; };
 		F9F080CF1EAC2616008CB9F7 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080CE1EAC2616008CB9F7 /* NumberExtension.swift */; };
 		F9F080E61EACB886008CB9F7 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F080E21EACB886008CB9F7 /* UIBarButtonItem+Badge.m */; };
@@ -61,6 +62,7 @@
 		F99D716A1EA95FEB00351A9A /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		F9C1B0AE1EB1408E00E52FD4 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		F9C1B0B01EB1433700E52FD4 /* OfferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTests.swift; sourceTree = "<group>"; };
+		F9C1B0B21EB14C0400E52FD4 /* OfferApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferApiManager.swift; sourceTree = "<group>"; };
 		F9C97B331EA6C45A00FA475E /* HenriPotierLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B471EA6C45B00FA475E /* HenriPotierLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B4D1EA6C45B00FA475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			children = (
 				F9F080EB1EACBA90008CB9F7 /* ApiManager.swift */,
 				F9F080EC1EACBA90008CB9F7 /* BookApiManager.swift */,
+				F9C1B0B21EB14C0400E52FD4 /* OfferApiManager.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				F9F080F01EACBA90008CB9F7 /* RequestManager.swift in Sources */,
 				F9F080CD1EAC1F3F008CB9F7 /* UImageViewExtension.swift in Sources */,
 				F99D71591EA95B7D00351A9A /* BooksViewController.swift in Sources */,
+				F9C1B0B31EB14C0400E52FD4 /* OfferApiManager.swift in Sources */,
 				F9F080CF1EAC2616008CB9F7 /* NumberExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

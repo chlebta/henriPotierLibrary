@@ -19,6 +19,10 @@ class CartViewController: UIViewController {
         super.viewDidLoad()
         
         self.setupViews()
+        
+        OfferApiManager().getOffersForCurrentPanel { (result, error) in
+            print(result)
+        }
     }
 
 
@@ -39,6 +43,7 @@ extension CartViewController {
     }
 }
 
+//MARK:
 
 //MARK:
 //MARK: tableview

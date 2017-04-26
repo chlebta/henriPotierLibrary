@@ -42,4 +42,15 @@ extension CartManager {
         }
     }
     
+    //this func return an array of isbn from current cartItems
+    func getIsbns() -> [String] {
+        var array:[String] = []
+        for item in cartItems {
+            array.append(item.isbn)
+        }
+        return array
+    }
+    
+
+    
 }
