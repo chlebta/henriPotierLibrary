@@ -36,7 +36,7 @@ extension CartManager {
     }
     
     //Remove item in given index
-    func removeItem(at: Int) {
+    func removeItem(at index: Int) {
         if index < cartItems.count {
             cartItems.remove(at: index)
         }

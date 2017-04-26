@@ -66,7 +66,7 @@ extension BooksViewController {
 //MARK: Actions 
 extension BooksViewController {
     @objc fileprivate func openShoppingView( _ sender: Any) {
-    
+        self.performSegue(withIdentifier: "cartSegue", sender: self)
     }
 }
 

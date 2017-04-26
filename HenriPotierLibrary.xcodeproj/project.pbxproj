@@ -26,6 +26,9 @@
 		F9F080EF1EACBA90008CB9F7 /* BookApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080EC1EACBA90008CB9F7 /* BookApiManager.swift */; };
 		F9F080F01EACBA90008CB9F7 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080ED1EACBA90008CB9F7 /* RequestManager.swift */; };
 		F9F080F21EACBACB008CB9F7 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080F11EACBACB008CB9F7 /* CartManager.swift */; };
+		F9F080F71EAD5984008CB9F7 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080F61EAD5984008CB9F7 /* CartViewController.swift */; };
+		F9F080F91EAD59A3008CB9F7 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080F81EAD59A3008CB9F7 /* CartTableViewCell.swift */; };
+		F9F080FB1EAD5C4D008CB9F7 /* BookModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080FA1EAD5C4D008CB9F7 /* BookModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		F9F080EC1EACBA90008CB9F7 /* BookApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookApiManager.swift; sourceTree = "<group>"; };
 		F9F080ED1EACBA90008CB9F7 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		F9F080F11EACBACB008CB9F7 /* CartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		F9F080F61EAD5984008CB9F7 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		F9F080F81EAD59A3008CB9F7 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		F9F080FA1EAD5C4D008CB9F7 /* BookModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +209,7 @@
 		F9C97B761EA6CA0D00FA475E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F9F080F51EAD5984008CB9F7 /* CartView */,
 				F99D715A1EA95BC100351A9A /* Shared */,
 				F99D71571EA95B6300351A9A /* BooksView */,
 			);
@@ -255,6 +262,16 @@
 				F9F080EC1EACBA90008CB9F7 /* BookApiManager.swift */,
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		F9F080F51EAD5984008CB9F7 /* CartView */ = {
+			isa = PBXGroup;
+			children = (
+				F9F080F61EAD5984008CB9F7 /* CartViewController.swift */,
+				F9F080F81EAD59A3008CB9F7 /* CartTableViewCell.swift */,
+				F9F080FA1EAD5C4D008CB9F7 /* BookModelView.swift */,
+			);
+			path = CartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,10 +482,13 @@
 			files = (
 				F99D716B1EA95FEB00351A9A /* BookTableViewCell.swift in Sources */,
 				F9F080F21EACBACB008CB9F7 /* CartManager.swift in Sources */,
+				F9F080F71EAD5984008CB9F7 /* CartViewController.swift in Sources */,
 				F9F080EF1EACBA90008CB9F7 /* BookApiManager.swift in Sources */,
 				F9F080EE1EACBA90008CB9F7 /* ApiManager.swift in Sources */,
 				F9F080E71EACB886008CB9F7 /* UIButton+Badge.m in Sources */,
 				F99D71321EA9053200351A9A /* Book.swift in Sources */,
+				F9F080F91EAD59A3008CB9F7 /* CartTableViewCell.swift in Sources */,
+				F9F080FB1EAD5C4D008CB9F7 /* BookModelView.swift in Sources */,
 				F9F080E61EACB886008CB9F7 /* UIBarButtonItem+Badge.m in Sources */,
 				F99D71641EA95BC100351A9A /* AppDelegate.swift in Sources */,
 				F9F080F01EACBA90008CB9F7 /* RequestManager.swift in Sources */,
