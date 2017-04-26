@@ -44,7 +44,14 @@ extension Offer {
     }
     
     func applyOfferAt(price: Float) -> Float {
-        return 0
+        switch self.type {
+        case .minus:
+            return price - value
+        case .percentage:
+            return (price / 100) * (100 - value)
+        case .slice:
+            return price - (floor(price / slice!) * value)
+        }
     }
     
 }

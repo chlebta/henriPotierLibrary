@@ -115,4 +115,27 @@ extension OfferTests {
         
     }
     
+    func testOfferSliceCalulator2() {
+        
+        let testDictionary: NSDictionary = ["type": "slice", "sliceValue": 200, "value": 12]
+        
+        let offer = Offer(testDictionary)
+        XCTAssertNotNil(offer)
+        
+        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        XCTAssertEqual(priceAfterApplyingTheOffer, 100)
+        
+    }
+    
+    func testOfferSliceCalulator3() {
+        
+        let testDictionary: NSDictionary = ["type": "slice", "sliceValue": 100, "value": 12]
+        
+        let offer = Offer(testDictionary)
+        XCTAssertNotNil(offer)
+        
+        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 350)
+        XCTAssertEqual(priceAfterApplyingTheOffer, 314)
+    }
+    
 }
