@@ -102,7 +102,6 @@ class BookTests: XCTestCase {
         XCTAssertNil(Book(testDictionary1))
         
         //the price is missing
-        
         let testDictionary2: NSDictionary =
             [
                 "isbn": "c8fabf68-8374-48fe-a7ea-a00ccd07afff",

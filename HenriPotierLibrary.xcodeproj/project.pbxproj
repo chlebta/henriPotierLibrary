@@ -18,6 +18,8 @@
 		F99D71671EA95BC100351A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99D71601EA95BC100351A9A /* Main.storyboard */; };
 		F99D71681EA95BC100351A9A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F99D71621EA95BC100351A9A /* Info.plist */; };
 		F99D716B1EA95FEB00351A9A /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99D716A1EA95FEB00351A9A /* BookTableViewCell.swift */; };
+		F9C1B0AF1EB1408E00E52FD4 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1B0AE1EB1408E00E52FD4 /* Offer.swift */; };
+		F9C1B0B11EB1433700E52FD4 /* OfferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1B0B01EB1433700E52FD4 /* OfferTests.swift */; };
 		F9F080CD1EAC1F3F008CB9F7 /* UImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080CC1EAC1F3F008CB9F7 /* UImageViewExtension.swift */; };
 		F9F080CF1EAC2616008CB9F7 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F080CE1EAC2616008CB9F7 /* NumberExtension.swift */; };
 		F9F080E61EACB886008CB9F7 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F080E21EACB886008CB9F7 /* UIBarButtonItem+Badge.m */; };
@@ -49,7 +51,6 @@
 		8CDB94F8D4254A1E22EE4FFA /* Pods-HenriPotierLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE87491EF35F8DFA5E792E08 /* Pods-HenriPotierLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierLibraryTests/Pods-HenriPotierLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		F99D71311EA9053200351A9A /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		F99D71431EA90D3400351A9A /* HenriPotierLibraryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HenriPotierLibraryTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F99D71441EA90D3400351A9A /* BookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
 		F99D71581EA95B7D00351A9A /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		F99D715B1EA95BC100351A9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +59,8 @@
 		F99D71611EA95BC100351A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F99D71621EA95BC100351A9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F99D716A1EA95FEB00351A9A /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		F9C1B0AE1EB1408E00E52FD4 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		F9C1B0B01EB1433700E52FD4 /* OfferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTests.swift; sourceTree = "<group>"; };
 		F9C97B331EA6C45A00FA475E /* HenriPotierLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotierLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B471EA6C45B00FA475E /* HenriPotierLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C97B4D1EA6C45B00FA475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,7 +187,7 @@
 			children = (
 				F9C97B4D1EA6C45B00FA475E /* Info.plist */,
 				F99D71441EA90D3400351A9A /* BookTests.swift */,
-				F99D71431EA90D3400351A9A /* HenriPotierLibraryTests-Bridging-Header.h */,
+				F9C1B0B01EB1433700E52FD4 /* OfferTests.swift */,
 			);
 			path = HenriPotierLibraryTests;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				F99D71311EA9053200351A9A /* Book.swift */,
+				F9C1B0AE1EB1408E00E52FD4 /* Offer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -488,6 +492,7 @@
 				F9F080E71EACB886008CB9F7 /* UIButton+Badge.m in Sources */,
 				F99D71321EA9053200351A9A /* Book.swift in Sources */,
 				F9F080F91EAD59A3008CB9F7 /* CartTableViewCell.swift in Sources */,
+				F9C1B0AF1EB1408E00E52FD4 /* Offer.swift in Sources */,
 				F9F080FB1EAD5C4D008CB9F7 /* BookModelView.swift in Sources */,
 				F9F080E61EACB886008CB9F7 /* UIBarButtonItem+Badge.m in Sources */,
 				F99D71641EA95BC100351A9A /* AppDelegate.swift in Sources */,
@@ -502,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C1B0B11EB1433700E52FD4 /* OfferTests.swift in Sources */,
 				F99D71451EA90D3400351A9A /* BookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,7 +677,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HenriPotierLibraryTests/HenriPotierLibraryTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotierLibrary.app/HenriPotierLibrary";
@@ -690,7 +695,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.xebia.HenriPotierLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "HenriPotierLibraryTests/HenriPotierLibraryTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotierLibrary.app/HenriPotierLibrary";
 			};
