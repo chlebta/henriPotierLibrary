@@ -39,9 +39,12 @@ extension Offer {
             }
         }
         
-        
         self.type = type
         self.value = value.floatValue
+    }
+    
+    func applyOfferAt(price: Float) -> Float {
+        return 0
     }
     
 }

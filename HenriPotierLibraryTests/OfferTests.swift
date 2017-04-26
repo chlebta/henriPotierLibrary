@@ -21,6 +21,10 @@ class OfferTests: XCTestCase {
         super.tearDown()
     }
     
+}
+
+//MARK: Init tests
+extension OfferTests {
     func testInitPercentageOffer() {
         
         let testDictionary: NSDictionary = ["type": "percentage", "value": 5]
@@ -70,4 +74,45 @@ class OfferTests: XCTestCase {
         let offer = Offer(testDictionary)
         XCTAssertNil(offer)
     }
+}
+
+//MARK: Calculator tests
+extension OfferTests {
+  
+    func testOfferPercentCalulator() {
+        
+        let testDictionary: NSDictionary = ["type": "percentage", "value": 5]
+        
+        let offer = Offer(testDictionary)
+        XCTAssertNotNil(offer)
+        
+        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        XCTAssertEqual(priceAfterApplyingTheOffer, 95)
+
+    }
+    
+    func testOfferMinusCalulator() {
+        
+        let testDictionary: NSDictionary = ["type": "minus", "value": 15]
+        
+        let offer = Offer(testDictionary)
+        XCTAssertNotNil(offer)
+        
+        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        XCTAssertEqual(priceAfterApplyingTheOffer, 85)
+        
+    }
+    
+    func testOfferSliceCalulator() {
+        
+        let testDictionary: NSDictionary = ["type": "slice", "sliceValue": 100, "value": 12]
+        
+        let offer = Offer(testDictionary)
+        XCTAssertNotNil(offer)
+        
+        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        XCTAssertEqual(priceAfterApplyingTheOffer, 88)
+        
+    }
+    
 }
