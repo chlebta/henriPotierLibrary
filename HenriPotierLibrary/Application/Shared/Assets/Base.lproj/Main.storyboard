@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f5o-vi-vfU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f5o-vi-vfU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -226,17 +226,42 @@
                                     <outlet property="delegate" destination="vzv-SC-QVQ" id="h8f-B3-fPU"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P98-RG-vkn">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Total Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEi-Ay-N9M">
+                                        <rect key="frame" x="146.5" y="12" width="81" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="999" constant="42" id="8f5-tf-lRN"/>
+                                            <constraint firstAttribute="height" constant="21" id="Wem-pE-Zwe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.037579309200000001" green="0.80455315110000003" blue="0.59576225279999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Opr-7c-IWz"/>
+                                    <constraint firstItem="YEi-Ay-N9M" firstAttribute="centerY" secondItem="P98-RG-vkn" secondAttribute="centerY" id="YNH-ZA-gJi"/>
+                                    <constraint firstItem="YEi-Ay-N9M" firstAttribute="centerX" secondItem="P98-RG-vkn" secondAttribute="centerX" id="eEV-w6-WPJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Df-2t-LhH" firstAttribute="top" secondItem="P98-RG-vkn" secondAttribute="bottom" id="5GX-Xe-bc3"/>
                             <constraint firstItem="5Df-2t-LhH" firstAttribute="top" secondItem="5Lj-r8-d8H" secondAttribute="bottom" id="5tx-v3-lyF"/>
                             <constraint firstAttribute="trailing" secondItem="5Lj-r8-d8H" secondAttribute="trailing" id="BWe-vu-5PV"/>
+                            <constraint firstItem="P98-RG-vkn" firstAttribute="leading" secondItem="9MM-SU-zcB" secondAttribute="leading" id="Ltk-f4-dj5"/>
                             <constraint firstItem="5Lj-r8-d8H" firstAttribute="leading" secondItem="9MM-SU-zcB" secondAttribute="leading" id="Nb2-4W-rCD"/>
+                            <constraint firstAttribute="trailing" secondItem="P98-RG-vkn" secondAttribute="trailing" id="XLl-38-7Qc"/>
                             <constraint firstItem="5Lj-r8-d8H" firstAttribute="top" secondItem="86P-B7-u97" secondAttribute="bottom" id="lQ4-S9-sIZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="5Lj-r8-d8H" id="hN2-qM-hAa"/>
+                        <outlet property="totalPrice" destination="YEi-Ay-N9M" id="Pke-O4-Vda"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyW-zR-KQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>

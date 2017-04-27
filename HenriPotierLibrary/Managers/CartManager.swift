@@ -51,6 +51,13 @@ extension CartManager {
         return array
     }
     
+    func getTotalItemsPrice() -> Float {
+        var total:Float = 0
+        for item in cartItems {
+            total = total + item.price
+        }
+        return total
+    }
 
     
 }
