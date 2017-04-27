@@ -86,7 +86,7 @@ extension OfferTests {
         let offer = Offer(testDictionary)
         XCTAssertNotNil(offer)
         
-        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        let priceAfterApplyingTheOffer = offer?.applyOfferOn(price: 100)
         XCTAssertEqual(priceAfterApplyingTheOffer, 95)
 
     }
@@ -98,7 +98,7 @@ extension OfferTests {
         let offer = Offer(testDictionary)
         XCTAssertNotNil(offer)
         
-        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        let priceAfterApplyingTheOffer = offer?.applyOfferOn(price: 100)
         XCTAssertEqual(priceAfterApplyingTheOffer, 85)
         
     }
@@ -110,7 +110,7 @@ extension OfferTests {
         let offer = Offer(testDictionary)
         XCTAssertNotNil(offer)
         
-        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        let priceAfterApplyingTheOffer = offer?.applyOfferOn(price: 100)
         XCTAssertEqual(priceAfterApplyingTheOffer, 88)
         
     }
@@ -122,7 +122,7 @@ extension OfferTests {
         let offer = Offer(testDictionary)
         XCTAssertNotNil(offer)
         
-        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 100)
+        let priceAfterApplyingTheOffer = offer?.applyOfferOn(price: 100)
         XCTAssertEqual(priceAfterApplyingTheOffer, 100)
         
     }
@@ -134,8 +134,25 @@ extension OfferTests {
         let offer = Offer(testDictionary)
         XCTAssertNotNil(offer)
         
-        let priceAfterApplyingTheOffer = offer?.applyOfferAt(price: 350)
+        let priceAfterApplyingTheOffer = offer?.applyOfferOn(price: 350)
         XCTAssertEqual(priceAfterApplyingTheOffer, 314)
     }
     
 }
+
+//MARK: Best offer getter
+extension OfferTests {
+    
+    func testApplyBestOffer() {
+        
+        let offer1 = Offer(["type": "slice", "sliceValue": 100, "value": 12])
+        let offer2 = Offer(["type": "minus", "value": 15])
+        let offer3 = Offer(["type": "percentage", "value": 5])
+        let price:Float = 65
+
+        let priceAfterOffer = Offer.applyBestOffer([offer1!, offer2!, offer3!], price: price)
+        XCTAssertEqual(priceAfterOffer, 50)
+
+    }
+}
+

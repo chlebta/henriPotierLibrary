@@ -43,7 +43,8 @@ extension Offer {
         self.value = value.floatValue
     }
     
-    func applyOfferAt(price: Float) -> Float {
+    //Calculate the price after applying the offer
+    func applyOfferOn(price: Float) -> Float {
         switch self.type {
         case .minus:
             return price - value
@@ -53,5 +54,21 @@ extension Offer {
             return price - (floor(price / slice!) * value)
         }
     }
-    
+}
+
+extension Offer {
+    //This function will select best offer and apply it on given price
+    //Inputs :
+    //  offers => an of offers can be applied on the price
+    //  price  =>  the price on which will apply the offer
+    static func applyBestOffer(_ offers: [Offer], price: Float) -> Float {
+        var bestPrice = price
+        for offer in offers {
+            let priceOfThisOffer = offer.applyOfferOn(price: price)
+            if priceOfThisOffer < bestPrice {
+                bestPrice = priceOfThisOffer
+            }
+        }
+        return bestPrice
+    }
 }

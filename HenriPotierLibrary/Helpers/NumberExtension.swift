@@ -10,6 +10,7 @@ import Foundation
 
 extension Float {
     
+    //return string in currency format
     var asCurrency:String {
         
         let formatter = NumberFormatter()
